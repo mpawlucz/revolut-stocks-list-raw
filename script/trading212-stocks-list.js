@@ -1,6 +1,6 @@
 $('#all-equities .d-row').each(function(e){
     function extract($element){
-        return $element.text().trim();
+        return $element.text().trim().replace(",", " ");
     }
     let $row = $(this);
     let $ticker = $row.find(".d-cell:nth-child(1)");
